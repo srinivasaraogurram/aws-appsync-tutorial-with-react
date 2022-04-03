@@ -54,7 +54,7 @@ import config from './aws-exports'
 Amplify.configure(config)
 
 That gives me some tslint warnings, so I changed my tslint.json to look like this:
-{code}
+~~~
 {
 "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
 "jsRules": {
@@ -79,7 +79,7 @@ That gives me some tslint warnings, so I changed my tslint.json to look like thi
 ]
 }
 }
-{code}
+~~~
 We also need to install some packages:
 yarn add aws-amplify aws-amplify-react
 To make sure everything is working so far, you can run yarn start to see the website and it should display a screen that says Welcome to React.
