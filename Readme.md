@@ -84,6 +84,7 @@ We also need to install some packages:
 yarn add aws-amplify aws-amplify-react
 To make sure everything is working so far, you can run yarn start to see the website and it should display a screen that says Welcome to React.
 Let’s add src/Form.tsx which we will use to type in the name to create a blog:
+```
 import * as React from "react";
 interface State {
 name: string;
@@ -118,4 +119,4 @@ onChange={this.handleChange}
 </form>
 );
 }
-                        
+```      
