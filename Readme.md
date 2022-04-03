@@ -1,4 +1,11 @@
 https://medium.com/@benawad/aws-appsync-tutorial-with-react-4e272a6f3527
+
+Error/Trouble Shooting:
+https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
+
+git push origin master
+
+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
 Step1 : 
 
 1.1: Start by installing AWS Amplify CLI:
@@ -47,6 +54,7 @@ import config from './aws-exports'
 Amplify.configure(config)
 
 That gives me some tslint warnings, so I changed my tslint.json to look like this:
+{code}
 {
 "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
 "jsRules": {
@@ -71,7 +79,7 @@ That gives me some tslint warnings, so I changed my tslint.json to look like thi
 ]
 }
 }
-
+{code}
 We also need to install some packages:
 yarn add aws-amplify aws-amplify-react
 To make sure everything is working so far, you can run yarn start to see the website and it should display a screen that says Welcome to React.
